@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addon.cs" />
     <Compile Include="PKGArchive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +57,14 @@
       <Project>{eeb16fca-ff9f-40b5-9d43-f2460aa930c8}</Project>
       <Name>HedgeLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HedgeLib\HedgeTools\HedgeArchiveEditor\HedgeArchiveEditor.csproj">
+      <Project>{5c49913a-a2ff-4a95-9ca9-8a1b1e5b9513}</Project>
+      <Name>HedgeArchiveEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
 </Project>
